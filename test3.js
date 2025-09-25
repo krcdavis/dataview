@@ -97,6 +97,7 @@ draw();//oooo
 //modify/move div set.
 //transformation state is a global value.
 //I think i will just send in raw x y z and do all the math here, so clean up main/add.
+
   function modDivSet(x,y,z,index) {
 //console.log(canvas.offsetLeft);//USELESS
     var divSet = divSets[index];//[divSetNdx++];
@@ -111,7 +112,7 @@ zz = sin(rot)*(x-128) + cos(rot)*(z-128) + 128;//YEAH
 
         var pixelX = (xx+52)*(width)/(360*1);
         var pixelY = (yy+52)*(height)/(360*1);
-    var siz = zz/(128 *1.45) +.5;//yay
+    var siz = zz/(128 *1.45) +.5;//yay?
 
 //fix size to not go to zero. -done
 //to account for top-left problem, subtact a small amt based on size...
@@ -139,7 +140,7 @@ pixelY = (pixelY -centerY)*(siz/2) +centerY  +height*.05;//temp... not quite rig
     divSet.style.top = Math.floor(pixelY) + "px";
     divSet.style["font-size"] = siz + "rem";
 
-    divSet.style["z-index"] = Math.floor(zz);
+    divSet.style["z-index"] = Math.floor(zz+56);
 
 }//mod
 

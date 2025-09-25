@@ -1,4 +1,9 @@
-<a href ="1.html">- 1 </a>
+<head>
+    <link rel="stylesheet" href="css.css" /></head>
+<body> <div class="aboutpage">
+<h1>Data Viewer</h1>
+<h2>Note, sets 17 and 26 are on the larger side and might lag a bit</h2>
+<p><a href ="1.html">- 1 </a>
 <a href ="2.html">- 2 </a>
 <a href ="3.html">- 3 </a>
 <a href ="4.html">- 4 </a>
@@ -24,3 +29,45 @@
 <a href ="24.html">- 24 </a>
 <a href ="25.html">- 25 </a>
 <a href ="26.html">- 26 </a>
+</p>
+
+<h2>What is this?</h2>
+<p>
+This is a visualizer for a certain set of data from a certain source, consisting of a triplet (RGB/XYZ) and sometimes a character. Ultimately there will be the ability to "walk around" the "cloud" of data and view it from multiple angles. I am currently busy trying to wrap my head arond the matrix math required to fully do this, pls be patient
+</p>
+<h2>So, what is that data?</h2>
+<p>Well, that's uh... it's a long story
+</p>
+<h2>Unfavorable Semicircle (the long story, made short)</h2>
+<p>There was this series of channels that posted, among other things, <a href = "https://www.youtube.com/watch?v=hz9QVDzM3tQ">loads of five-second videos</a> where a voice would read off a single character or number while a single color was displayed. Putting a given series of videos together as a single pixel per vid of their respective color would reveal images or at least patterns. In other "series", using the RGB coordinates as XYZ coordinates would also seem to reveal hidden 3D forms. More reading, and some examples:</p>
+<ul>
+<li> https://www.unfavorablesemicircle.com/Original_unnamed_series Color patterns/themes, the data source used in this website
+</li>
+<li>
+ https://www.unfavorablesemicircle.com/LOCK Disk-like image</li>
+<li>
+ https://www.unfavorablesemicircle.com/FEND 3D planes are likely the result of the gradient segments in the 2D composite</li>
+<li>
+ https://www.unfavorablesemicircle.com/JALVINSACH </li>
+<li>
+ https://www.unfavorablesemicircle.com/BREADTH The very distinctive atom- or solar system-like 3D composite is almost certainly the intended reading of the data </li>
+<li>
+https://www.unfavorablesemicircle.com/CLEAN </li>
+</ul>
+
+
+
+<p>
+The creator of the project has since <a href = "https://www.unfavorablesemicircle.com/ANSWERS">come forth</a> and said that it was all just an art project, not communications from aliens or whatever, and that there were still a couple things "hidden" within that we hadn't unearthed. This project is meant to act as a data viewer; it will probably not directly uncover anything the previous methods didn't but it might be useful for visualizing things and deciding on further methods...</p>
+<h2>Known issues:</h2>
+<ul>
+<li>
+-some warping, probably due to an error in the perspective math, which needs to be adjusted anyway so distant points don't shrink to literally nothing</li>
+<li>
+-points too "far away" from view can disappear, seemingly at font size of less than .5 rem- fixed? seems to have been a z-indexing issue</li>
+<li>
+In some cases two "points" occupy the same triplet; some consideration will be taken as to how to display that but for now they'll just overlap.</li>
+
+</ul>
+
+</div></body>

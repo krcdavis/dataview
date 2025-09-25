@@ -28,8 +28,44 @@ canvas {
   background-color: #888;
 }
 
+.aboutpage {
 
+  background-color: #555;
+  text-align: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #eee;
 
+height: 100%;
+width: 80%;
+margin: auto;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+ul {
+ text-align: left;
+ max-width: 60%;
+margin: auto;
+}
 
 #overlay {
   position: absolute;
