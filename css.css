@@ -37,9 +37,10 @@ canvas {
   font-weight: 400;
   color: #eee;
 
-height: 100%;
-width: 80%;
+width: 77%;
+font-size: 1.1rem;
 margin: auto;
+padding: 1% 5%;
 }
 
 a:link {
